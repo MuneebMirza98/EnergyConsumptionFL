@@ -1,0 +1,5 @@
+INFO:root:l'énergie moyenne par multiplication est de 1.2184716418547878e-08 kWh
+INFO:root:l'énergie moyenne par addition est de 1.9326657853653414e-08 kWh
+INFO:root:l'énergie moyenne par assignement est de 9.656787094614481e-08 kWh
+INFO:root:l'énergie moyenne par exponentielle est de 1.2939571304129536e-08 kWh
+INFO:root:l'énergie moyenne par addition est de 9.439171176241274e-08 kWh

@@ -1,0 +1,57 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nrj-exp
+  namespace: muneeb
+spec:
+  containers:
+    - name: pytorch
+      env:
+      - name: DATASET
+        value: "FashionMNIST"
+      - name: MEASURE_POWER
+        value: "60000000"
+      - name: FINAL_RESULTS_FILE
+        value: "./final_results_fashion_mnist_cpu.csv"
+      - name: MODEL_PATH
+        value: "./model/FashionMNIST_cnn_experiment.pth"
+      - name: NOMBRE_EPOCH
+        value: "1"
+      - name: LEARNING_RATE
+        value: "0.01"
+      - name: OPTIMIZER
+        value: "SGD"
+      - name: LOSS
+        value: "CrossEntropyLoss"
+      - name: EMISSION_OUTPUT_DIRECTORY
+        value: "./energy"
+      - name: EMISSION_OUTPUT_FILE
+        value: "emissions_cifar10_cpu.csv"
+      - name: WORKER
+        valueFrom:
+          fieldRef:
+            fieldPath : spec.nodeName
+      - name: NOMBRE_CPUS
+        valueFrom:
+          resourceFieldRef:
+            containerName: pytorch
+            resource: limits.cpu
+      - name: BATCH_SIZE
+        value: "128"
+      image: muneebaseemmirza/energy_experiment:latest
+      command: ["/bin/bash", "-c", "--"]
+      args:
+        ["
+        for i in {1..100}; do python3 codecarbon_experiment_pytorch.py $(DATASET) $(MEASURE_POWER) $(MODEL_PATH) $(NOMBRE_EPOCH) $(LEARNING_RATE) $(OPTIMIZER) $(LOSS) $(EMISSION_OUTPUT_DIRECTORY) $(EMISSION_OUTPUT_FILE) $(FINAL_RESULTS_FILE) $(BATCH_SIZE); done; while true; do sleep 30; done;"]
+      volumeMounts:
+        - name: pvc
+          mountPath: /workspace
+          subPath: pytorch
+      resources:
+        limits:
+          cpu: 8.0
+          nvidia.com/gpu: 2
+  volumes:
+    - name: pvc
+      persistentVolumeClaim:
+        claimName: nfs-pvc

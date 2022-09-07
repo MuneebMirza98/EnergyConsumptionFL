@@ -1,0 +1,710 @@
+INFO:root:Num GPUs available: 0
+INFO:root:Num CPUs available: 4
+INFO:root:Will use device cpu
+INFO:root:Experiment for dataset MNIST, with the model saved her "./model/mnist_cnn_experiment.pth"
+INFO:root:learning rate = 0.001
+INFO:root:=================================== EPOCH 1 =========================================
+INFO:root:Epoch [1/100], Step [1000/6000], Loss: 0.0399
+INFO:root:Epoch [1/100], Step [2000/6000], Loss: 0.0165
+INFO:root:Epoch [1/100], Step [3000/6000], Loss: 0.0709
+INFO:root:Epoch [1/100], Step [4000/6000], Loss: 0.0004
+INFO:root:Epoch [1/100], Step [5000/6000], Loss: 0.0066
+INFO:root:Epoch [1/100], Step [6000/6000], Loss: 0.0619
+INFO:root:=================================== EPOCH 2 =========================================
+INFO:root:Epoch [2/100], Step [1000/6000], Loss: 0.2633
+INFO:root:Epoch [2/100], Step [2000/6000], Loss: 0.0236
+INFO:root:Epoch [2/100], Step [3000/6000], Loss: 0.0359
+INFO:root:Epoch [2/100], Step [4000/6000], Loss: 0.0306
+INFO:root:Epoch [2/100], Step [5000/6000], Loss: 0.0912
+INFO:root:Epoch [2/100], Step [6000/6000], Loss: 0.0020
+INFO:root:=================================== EPOCH 3 =========================================
+INFO:root:Epoch [3/100], Step [1000/6000], Loss: 0.0062
+INFO:root:Epoch [3/100], Step [2000/6000], Loss: 0.0051
+INFO:root:Epoch [3/100], Step [3000/6000], Loss: 0.7399
+INFO:root:Epoch [3/100], Step [4000/6000], Loss: 0.0019
+INFO:root:Epoch [3/100], Step [5000/6000], Loss: 0.0381
+INFO:root:Epoch [3/100], Step [6000/6000], Loss: 0.0081
+INFO:root:=================================== EPOCH 4 =========================================
+INFO:root:Epoch [4/100], Step [1000/6000], Loss: 0.4553
+INFO:root:Epoch [4/100], Step [2000/6000], Loss: 0.0045
+INFO:root:Epoch [4/100], Step [3000/6000], Loss: 0.0162
+INFO:root:Epoch [4/100], Step [4000/6000], Loss: 0.0045
+INFO:root:Epoch [4/100], Step [5000/6000], Loss: 0.0182
+INFO:root:Epoch [4/100], Step [6000/6000], Loss: 0.0435
+INFO:root:=================================== EPOCH 5 =========================================
+INFO:root:Epoch [5/100], Step [1000/6000], Loss: 0.0015
+INFO:root:Epoch [5/100], Step [2000/6000], Loss: 0.0012
+INFO:root:Epoch [5/100], Step [3000/6000], Loss: 0.0256
+INFO:root:Epoch [5/100], Step [4000/6000], Loss: 0.0523
+INFO:root:Epoch [5/100], Step [5000/6000], Loss: 0.0022
+INFO:root:Epoch [5/100], Step [6000/6000], Loss: 0.0366
+INFO:root:=================================== EPOCH 6 =========================================
+INFO:root:Epoch [6/100], Step [1000/6000], Loss: 0.0013
+INFO:root:Epoch [6/100], Step [2000/6000], Loss: 0.0624
+INFO:root:Epoch [6/100], Step [3000/6000], Loss: 0.0042
+INFO:root:Epoch [6/100], Step [4000/6000], Loss: 0.0060
+INFO:root:Epoch [6/100], Step [5000/6000], Loss: 0.0013
+INFO:root:Epoch [6/100], Step [6000/6000], Loss: 0.0433
+INFO:root:=================================== EPOCH 7 =========================================
+INFO:root:Epoch [7/100], Step [1000/6000], Loss: 0.0022
+INFO:root:Epoch [7/100], Step [2000/6000], Loss: 0.0815
+INFO:root:Epoch [7/100], Step [3000/6000], Loss: 0.0013
+INFO:root:Epoch [7/100], Step [4000/6000], Loss: 0.0575
+INFO:root:Epoch [7/100], Step [5000/6000], Loss: 0.1755
+INFO:root:Epoch [7/100], Step [6000/6000], Loss: 0.0012
+INFO:root:=================================== EPOCH 8 =========================================
+INFO:root:Epoch [8/100], Step [1000/6000], Loss: 0.0153
+INFO:root:Epoch [8/100], Step [2000/6000], Loss: 0.0720
+INFO:root:Epoch [8/100], Step [3000/6000], Loss: 0.0030
+INFO:root:Epoch [8/100], Step [4000/6000], Loss: 0.2915
+INFO:root:Epoch [8/100], Step [5000/6000], Loss: 0.0009
+INFO:root:Epoch [8/100], Step [6000/6000], Loss: 0.0024
+INFO:root:=================================== EPOCH 9 =========================================
+INFO:root:Epoch [9/100], Step [1000/6000], Loss: 0.0833
+INFO:root:Epoch [9/100], Step [2000/6000], Loss: 0.1262
+INFO:root:Epoch [9/100], Step [3000/6000], Loss: 0.0017
+INFO:root:Epoch [9/100], Step [4000/6000], Loss: 0.0048
+INFO:root:Epoch [9/100], Step [5000/6000], Loss: 0.0008
+INFO:root:Epoch [9/100], Step [6000/6000], Loss: 0.2011
+INFO:root:=================================== EPOCH 10 =========================================
+INFO:root:Epoch [10/100], Step [1000/6000], Loss: 0.0007
+INFO:root:Epoch [10/100], Step [2000/6000], Loss: 0.4925
+INFO:root:Epoch [10/100], Step [3000/6000], Loss: 0.0585
+INFO:root:Epoch [10/100], Step [4000/6000], Loss: 0.0011
+INFO:root:Epoch [10/100], Step [5000/6000], Loss: 0.0263
+INFO:root:Epoch [10/100], Step [6000/6000], Loss: 0.0230
+INFO:root:=================================== EPOCH 11 =========================================
+INFO:root:Epoch [11/100], Step [1000/6000], Loss: 0.0019
+INFO:root:Epoch [11/100], Step [2000/6000], Loss: 0.0008
+INFO:root:Epoch [11/100], Step [3000/6000], Loss: 0.0040
+INFO:root:Epoch [11/100], Step [4000/6000], Loss: 0.0026
+INFO:root:Epoch [11/100], Step [5000/6000], Loss: 0.0225
+INFO:root:Epoch [11/100], Step [6000/6000], Loss: 0.0061
+INFO:root:=================================== EPOCH 12 =========================================
+INFO:root:Epoch [12/100], Step [1000/6000], Loss: 0.0307
+INFO:root:Epoch [12/100], Step [2000/6000], Loss: 0.0003
+INFO:root:Epoch [12/100], Step [3000/6000], Loss: 0.0004
+INFO:root:Epoch [12/100], Step [4000/6000], Loss: 0.0237
+INFO:root:Epoch [12/100], Step [5000/6000], Loss: 0.0101
+INFO:root:Epoch [12/100], Step [6000/6000], Loss: 0.0006
+INFO:root:=================================== EPOCH 13 =========================================
+INFO:root:Epoch [13/100], Step [1000/6000], Loss: 0.3278
+INFO:root:Epoch [13/100], Step [2000/6000], Loss: 0.0041
+INFO:root:Epoch [13/100], Step [3000/6000], Loss: 0.0191
+INFO:root:Epoch [13/100], Step [4000/6000], Loss: 0.0133
+INFO:root:Epoch [13/100], Step [5000/6000], Loss: 0.0153
+INFO:root:Epoch [13/100], Step [6000/6000], Loss: 0.0017
+INFO:root:=================================== EPOCH 14 =========================================
+INFO:root:Epoch [14/100], Step [1000/6000], Loss: 0.0113
+INFO:root:Epoch [14/100], Step [2000/6000], Loss: 0.0152
+INFO:root:Epoch [14/100], Step [3000/6000], Loss: 0.0111
+INFO:root:Epoch [14/100], Step [4000/6000], Loss: 0.0012
+INFO:root:Epoch [14/100], Step [5000/6000], Loss: 0.0013
+INFO:root:Epoch [14/100], Step [6000/6000], Loss: 0.0017
+INFO:root:=================================== EPOCH 15 =========================================
+INFO:root:Epoch [15/100], Step [1000/6000], Loss: 0.0077
+INFO:root:Epoch [15/100], Step [2000/6000], Loss: 0.0041
+INFO:root:Epoch [15/100], Step [3000/6000], Loss: 0.0007
+INFO:root:Epoch [15/100], Step [4000/6000], Loss: 0.0002
+INFO:root:Epoch [15/100], Step [5000/6000], Loss: 0.0069
+INFO:root:Epoch [15/100], Step [6000/6000], Loss: 0.0015
+INFO:root:=================================== EPOCH 16 =========================================
+INFO:root:Epoch [16/100], Step [1000/6000], Loss: 0.1155
+INFO:root:Epoch [16/100], Step [2000/6000], Loss: 0.0007
+INFO:root:Epoch [16/100], Step [3000/6000], Loss: 0.2804
+INFO:root:Epoch [16/100], Step [4000/6000], Loss: 0.0006
+INFO:root:Epoch [16/100], Step [5000/6000], Loss: 0.0006
+INFO:root:Epoch [16/100], Step [6000/6000], Loss: 0.0146
+INFO:root:=================================== EPOCH 17 =========================================
+INFO:root:Epoch [17/100], Step [1000/6000], Loss: 0.0022
+INFO:root:Epoch [17/100], Step [2000/6000], Loss: 0.1906
+INFO:root:Epoch [17/100], Step [3000/6000], Loss: 0.0020
+INFO:root:Epoch [17/100], Step [4000/6000], Loss: 0.0101
+INFO:root:Epoch [17/100], Step [5000/6000], Loss: 0.2308
+INFO:root:Epoch [17/100], Step [6000/6000], Loss: 0.0004
+INFO:root:=================================== EPOCH 18 =========================================
+INFO:root:Epoch [18/100], Step [1000/6000], Loss: 0.0011
+INFO:root:Epoch [18/100], Step [2000/6000], Loss: 0.0013
+INFO:root:Epoch [18/100], Step [3000/6000], Loss: 0.0087
+INFO:root:Epoch [18/100], Step [4000/6000], Loss: 0.0038
+INFO:root:Epoch [18/100], Step [5000/6000], Loss: 0.0004
+INFO:root:Epoch [18/100], Step [6000/6000], Loss: 0.0030
+INFO:root:=================================== EPOCH 19 =========================================
+INFO:root:Epoch [19/100], Step [1000/6000], Loss: 0.0008
+INFO:root:Epoch [19/100], Step [2000/6000], Loss: 0.0262
+INFO:root:Epoch [19/100], Step [3000/6000], Loss: 0.0001
+INFO:root:Epoch [19/100], Step [4000/6000], Loss: 0.2147
+INFO:root:Epoch [19/100], Step [5000/6000], Loss: 0.0034
+INFO:root:Epoch [19/100], Step [6000/6000], Loss: 0.1168
+INFO:root:=================================== EPOCH 20 =========================================
+INFO:root:Epoch [20/100], Step [1000/6000], Loss: 0.0119
+INFO:root:Epoch [20/100], Step [2000/6000], Loss: 0.3521
+INFO:root:Epoch [20/100], Step [3000/6000], Loss: 0.0016
+INFO:root:Epoch [20/100], Step [4000/6000], Loss: 0.0006
+INFO:root:Epoch [20/100], Step [5000/6000], Loss: 0.1042
+INFO:root:Epoch [20/100], Step [6000/6000], Loss: 0.0068
+INFO:root:=================================== EPOCH 21 =========================================
+INFO:root:Epoch [21/100], Step [1000/6000], Loss: 0.0164
+INFO:root:Epoch [21/100], Step [2000/6000], Loss: 0.0008
+INFO:root:Epoch [21/100], Step [3000/6000], Loss: 0.0330
+INFO:root:Epoch [21/100], Step [4000/6000], Loss: 0.0266
+INFO:root:Epoch [21/100], Step [5000/6000], Loss: 0.0033
+INFO:root:Epoch [21/100], Step [6000/6000], Loss: 0.0221
+INFO:root:=================================== EPOCH 22 =========================================
+INFO:root:Epoch [22/100], Step [1000/6000], Loss: 0.0037
+INFO:root:Epoch [22/100], Step [2000/6000], Loss: 0.0031
+INFO:root:Epoch [22/100], Step [3000/6000], Loss: 0.1490
+INFO:root:Epoch [22/100], Step [4000/6000], Loss: 0.0044
+INFO:root:Epoch [22/100], Step [5000/6000], Loss: 0.0527
+INFO:root:Epoch [22/100], Step [6000/6000], Loss: 0.0009
+INFO:root:=================================== EPOCH 23 =========================================
+INFO:root:Epoch [23/100], Step [1000/6000], Loss: 0.0315
+INFO:root:Epoch [23/100], Step [2000/6000], Loss: 0.1620
+INFO:root:Epoch [23/100], Step [3000/6000], Loss: 0.0007
+INFO:root:Epoch [23/100], Step [4000/6000], Loss: 0.0023
+INFO:root:Epoch [23/100], Step [5000/6000], Loss: 0.0029
+INFO:root:Epoch [23/100], Step [6000/6000], Loss: 0.0018
+INFO:root:=================================== EPOCH 24 =========================================
+INFO:root:Epoch [24/100], Step [1000/6000], Loss: 0.0233
+INFO:root:Epoch [24/100], Step [2000/6000], Loss: 0.0163
+INFO:root:Epoch [24/100], Step [3000/6000], Loss: 0.0944
+INFO:root:Epoch [24/100], Step [4000/6000], Loss: 0.0021
+INFO:root:Epoch [24/100], Step [5000/6000], Loss: 0.0003
+INFO:root:Epoch [24/100], Step [6000/6000], Loss: 0.0022
+INFO:root:=================================== EPOCH 25 =========================================
+INFO:root:Epoch [25/100], Step [1000/6000], Loss: 0.0333
+INFO:root:Epoch [25/100], Step [2000/6000], Loss: 0.0005
+INFO:root:Epoch [25/100], Step [3000/6000], Loss: 0.0032
+INFO:root:Epoch [25/100], Step [4000/6000], Loss: 0.0132
+INFO:root:Epoch [25/100], Step [5000/6000], Loss: 0.0079
+INFO:root:Epoch [25/100], Step [6000/6000], Loss: 0.0020
+INFO:root:=================================== EPOCH 26 =========================================
+INFO:root:Epoch [26/100], Step [1000/6000], Loss: 0.5000
+INFO:root:Epoch [26/100], Step [2000/6000], Loss: 0.0167
+INFO:root:Epoch [26/100], Step [3000/6000], Loss: 0.0086
+INFO:root:Epoch [26/100], Step [4000/6000], Loss: 0.0001
+INFO:root:Epoch [26/100], Step [5000/6000], Loss: 0.0126
+INFO:root:Epoch [26/100], Step [6000/6000], Loss: 0.0022
+INFO:root:=================================== EPOCH 27 =========================================
+INFO:root:Epoch [27/100], Step [1000/6000], Loss: 0.0030
+INFO:root:Epoch [27/100], Step [2000/6000], Loss: 0.0074
+INFO:root:Epoch [27/100], Step [3000/6000], Loss: 0.0755
+INFO:root:Epoch [27/100], Step [4000/6000], Loss: 0.0003
+INFO:root:Epoch [27/100], Step [5000/6000], Loss: 0.0003
+INFO:root:Epoch [27/100], Step [6000/6000], Loss: 0.0067
+INFO:root:=================================== EPOCH 28 =========================================
+INFO:root:Epoch [28/100], Step [1000/6000], Loss: 0.2646
+INFO:root:Epoch [28/100], Step [2000/6000], Loss: 0.0006
+INFO:root:Epoch [28/100], Step [3000/6000], Loss: 0.0003
+INFO:root:Epoch [28/100], Step [4000/6000], Loss: 0.0968
+INFO:root:Epoch [28/100], Step [5000/6000], Loss: 0.0040
+INFO:root:Epoch [28/100], Step [6000/6000], Loss: 0.0007
+INFO:root:=================================== EPOCH 29 =========================================
+INFO:root:Epoch [29/100], Step [1000/6000], Loss: 0.0092
+INFO:root:Epoch [29/100], Step [2000/6000], Loss: 0.0040
+INFO:root:Epoch [29/100], Step [3000/6000], Loss: 0.0235
+INFO:root:Epoch [29/100], Step [4000/6000], Loss: 0.0024
+INFO:root:Epoch [29/100], Step [5000/6000], Loss: 0.0088
+INFO:root:Epoch [29/100], Step [6000/6000], Loss: 0.0035
+INFO:root:=================================== EPOCH 30 =========================================
+INFO:root:Epoch [30/100], Step [1000/6000], Loss: 0.0111
+INFO:root:Epoch [30/100], Step [2000/6000], Loss: 0.0064
+INFO:root:Epoch [30/100], Step [3000/6000], Loss: 0.0026
+INFO:root:Epoch [30/100], Step [4000/6000], Loss: 0.0009
+INFO:root:Epoch [30/100], Step [5000/6000], Loss: 0.0008
+INFO:root:Epoch [30/100], Step [6000/6000], Loss: 0.0007
+INFO:root:=================================== EPOCH 31 =========================================
+INFO:root:Epoch [31/100], Step [1000/6000], Loss: 0.0003
+INFO:root:Epoch [31/100], Step [2000/6000], Loss: 0.0009
+INFO:root:Epoch [31/100], Step [3000/6000], Loss: 0.0039
+INFO:root:Epoch [31/100], Step [4000/6000], Loss: 0.0019
+INFO:root:Epoch [31/100], Step [5000/6000], Loss: 0.0002
+INFO:root:Epoch [31/100], Step [6000/6000], Loss: 0.0684
+INFO:root:=================================== EPOCH 32 =========================================
+INFO:root:Epoch [32/100], Step [1000/6000], Loss: 0.0077
+INFO:root:Epoch [32/100], Step [2000/6000], Loss: 0.0014
+INFO:root:Epoch [32/100], Step [3000/6000], Loss: 0.0001
+INFO:root:Epoch [32/100], Step [4000/6000], Loss: 0.0255
+INFO:root:Epoch [32/100], Step [5000/6000], Loss: 0.0122
+INFO:root:Epoch [32/100], Step [6000/6000], Loss: 0.0027
+INFO:root:=================================== EPOCH 33 =========================================
+INFO:root:Epoch [33/100], Step [1000/6000], Loss: 0.0001
+INFO:root:Epoch [33/100], Step [2000/6000], Loss: 0.0005
+INFO:root:Epoch [33/100], Step [3000/6000], Loss: 0.0001
+INFO:root:Epoch [33/100], Step [4000/6000], Loss: 0.0282
+INFO:root:Epoch [33/100], Step [5000/6000], Loss: 0.0020
+INFO:root:Epoch [33/100], Step [6000/6000], Loss: 0.0057
+INFO:root:=================================== EPOCH 34 =========================================
+INFO:root:Epoch [34/100], Step [1000/6000], Loss: 0.0003
+INFO:root:Epoch [34/100], Step [2000/6000], Loss: 0.0018
+INFO:root:Epoch [34/100], Step [3000/6000], Loss: 0.0006
+INFO:root:Epoch [34/100], Step [4000/6000], Loss: 0.1230
+INFO:root:Epoch [34/100], Step [5000/6000], Loss: 0.0120
+INFO:root:Epoch [34/100], Step [6000/6000], Loss: 0.0002
+INFO:root:=================================== EPOCH 35 =========================================
+INFO:root:Epoch [35/100], Step [1000/6000], Loss: 0.0066
+INFO:root:Epoch [35/100], Step [2000/6000], Loss: 0.0741
+INFO:root:Epoch [35/100], Step [3000/6000], Loss: 0.0106
+INFO:root:Epoch [35/100], Step [4000/6000], Loss: 0.0273
+INFO:root:Epoch [35/100], Step [5000/6000], Loss: 0.0052
+INFO:root:Epoch [35/100], Step [6000/6000], Loss: 0.0086
+INFO:root:=================================== EPOCH 36 =========================================
+INFO:root:Epoch [36/100], Step [1000/6000], Loss: 0.0006
+INFO:root:Epoch [36/100], Step [2000/6000], Loss: 0.0079
+INFO:root:Epoch [36/100], Step [3000/6000], Loss: 0.0247
+INFO:root:Epoch [36/100], Step [4000/6000], Loss: 0.0160
+INFO:root:Epoch [36/100], Step [5000/6000], Loss: 0.0601
+INFO:root:Epoch [36/100], Step [6000/6000], Loss: 0.0037
+INFO:root:=================================== EPOCH 37 =========================================
+INFO:root:Epoch [37/100], Step [1000/6000], Loss: 0.0013
+INFO:root:Epoch [37/100], Step [2000/6000], Loss: 0.0002
+INFO:root:Epoch [37/100], Step [3000/6000], Loss: 0.0005
+INFO:root:Epoch [37/100], Step [4000/6000], Loss: 0.0002
+INFO:root:Epoch [37/100], Step [5000/6000], Loss: 0.0007
+INFO:root:Epoch [37/100], Step [6000/6000], Loss: 0.0001
+INFO:root:=================================== EPOCH 38 =========================================
+INFO:root:Epoch [38/100], Step [1000/6000], Loss: 0.0004
+INFO:root:Epoch [38/100], Step [2000/6000], Loss: 0.0004
+INFO:root:Epoch [38/100], Step [3000/6000], Loss: 0.0046
+INFO:root:Epoch [38/100], Step [4000/6000], Loss: 0.0003
+INFO:root:Epoch [38/100], Step [5000/6000], Loss: 0.0031
+INFO:root:Epoch [38/100], Step [6000/6000], Loss: 0.0015
+INFO:root:=================================== EPOCH 39 =========================================
+INFO:root:Epoch [39/100], Step [1000/6000], Loss: 0.0014
+INFO:root:Epoch [39/100], Step [2000/6000], Loss: 0.1348
+INFO:root:Epoch [39/100], Step [3000/6000], Loss: 0.0014
+INFO:root:Epoch [39/100], Step [4000/6000], Loss: 0.0020
+INFO:root:Epoch [39/100], Step [5000/6000], Loss: 0.0013
+INFO:root:Epoch [39/100], Step [6000/6000], Loss: 0.0009
+INFO:root:=================================== EPOCH 40 =========================================
+INFO:root:Epoch [40/100], Step [1000/6000], Loss: 0.0023
+INFO:root:Epoch [40/100], Step [2000/6000], Loss: 0.0077
+INFO:root:Epoch [40/100], Step [3000/6000], Loss: 0.0353
+INFO:root:Epoch [40/100], Step [4000/6000], Loss: 0.0001
+INFO:root:Epoch [40/100], Step [5000/6000], Loss: 0.0004
+INFO:root:Epoch [40/100], Step [6000/6000], Loss: 0.0004
+INFO:root:=================================== EPOCH 41 =========================================
+INFO:root:Epoch [41/100], Step [1000/6000], Loss: 0.0000
+INFO:root:Epoch [41/100], Step [2000/6000], Loss: 0.0018
+INFO:root:Epoch [41/100], Step [3000/6000], Loss: 0.0037
+INFO:root:Epoch [41/100], Step [4000/6000], Loss: 0.0030
+INFO:root:Epoch [41/100], Step [5000/6000], Loss: 0.0110
+INFO:root:Epoch [41/100], Step [6000/6000], Loss: 0.0029
+INFO:root:=================================== EPOCH 42 =========================================
+INFO:root:Epoch [42/100], Step [1000/6000], Loss: 0.0006
+INFO:root:Epoch [42/100], Step [2000/6000], Loss: 0.0032
+INFO:root:Epoch [42/100], Step [3000/6000], Loss: 0.0488
+INFO:root:Epoch [42/100], Step [4000/6000], Loss: 0.0233
+INFO:root:Epoch [42/100], Step [5000/6000], Loss: 0.0122
+INFO:root:Epoch [42/100], Step [6000/6000], Loss: 0.0412
+INFO:root:=================================== EPOCH 43 =========================================
+INFO:root:Epoch [43/100], Step [1000/6000], Loss: 0.0018
+INFO:root:Epoch [43/100], Step [2000/6000], Loss: 0.0219
+INFO:root:Epoch [43/100], Step [3000/6000], Loss: 0.0002
+INFO:root:Epoch [43/100], Step [4000/6000], Loss: 0.0013
+INFO:root:Epoch [43/100], Step [5000/6000], Loss: 0.0054
+INFO:root:Epoch [43/100], Step [6000/6000], Loss: 0.0005
+INFO:root:=================================== EPOCH 44 =========================================
+INFO:root:Epoch [44/100], Step [1000/6000], Loss: 0.0321
+INFO:root:Epoch [44/100], Step [2000/6000], Loss: 0.1540
+INFO:root:Epoch [44/100], Step [3000/6000], Loss: 0.0824
+INFO:root:Epoch [44/100], Step [4000/6000], Loss: 0.0024
+INFO:root:Epoch [44/100], Step [5000/6000], Loss: 0.0020
+INFO:root:Epoch [44/100], Step [6000/6000], Loss: 0.0016
+INFO:root:=================================== EPOCH 45 =========================================
+INFO:root:Epoch [45/100], Step [1000/6000], Loss: 0.0001
+INFO:root:Epoch [45/100], Step [2000/6000], Loss: 0.0008
+INFO:root:Epoch [45/100], Step [3000/6000], Loss: 0.0002
+INFO:root:Epoch [45/100], Step [4000/6000], Loss: 0.0008
+INFO:root:Epoch [45/100], Step [5000/6000], Loss: 0.0007
+INFO:root:Epoch [45/100], Step [6000/6000], Loss: 0.0018
+INFO:root:=================================== EPOCH 46 =========================================
+INFO:root:Epoch [46/100], Step [1000/6000], Loss: 0.0000
+INFO:root:Epoch [46/100], Step [2000/6000], Loss: 0.0000
+INFO:root:Epoch [46/100], Step [3000/6000], Loss: 0.0003
+INFO:root:Epoch [46/100], Step [4000/6000], Loss: 0.3926
+INFO:root:Epoch [46/100], Step [5000/6000], Loss: 0.0011
+INFO:root:Epoch [46/100], Step [6000/6000], Loss: 0.0029
+INFO:root:=================================== EPOCH 47 =========================================
+INFO:root:Epoch [47/100], Step [1000/6000], Loss: 0.0010
+INFO:root:Epoch [47/100], Step [2000/6000], Loss: 0.0365
+INFO:root:Epoch [47/100], Step [3000/6000], Loss: 0.0001
+INFO:root:Epoch [47/100], Step [4000/6000], Loss: 0.0003
+INFO:root:Epoch [47/100], Step [5000/6000], Loss: 0.0038
+INFO:root:Epoch [47/100], Step [6000/6000], Loss: 0.0021
+INFO:root:=================================== EPOCH 48 =========================================
+INFO:root:Epoch [48/100], Step [1000/6000], Loss: 0.0006
+INFO:root:Epoch [48/100], Step [2000/6000], Loss: 0.0255
+INFO:root:Epoch [48/100], Step [3000/6000], Loss: 0.0211
+INFO:root:Epoch [48/100], Step [4000/6000], Loss: 0.0001
+INFO:root:Epoch [48/100], Step [5000/6000], Loss: 0.0078
+INFO:root:Epoch [48/100], Step [6000/6000], Loss: 0.0009
+INFO:root:=================================== EPOCH 49 =========================================
+INFO:root:Epoch [49/100], Step [1000/6000], Loss: 0.0004
+INFO:root:Epoch [49/100], Step [2000/6000], Loss: 0.0026
+INFO:root:Epoch [49/100], Step [3000/6000], Loss: 0.0008
+INFO:root:Epoch [49/100], Step [4000/6000], Loss: 0.0002
+INFO:root:Epoch [49/100], Step [5000/6000], Loss: 0.0002
+INFO:root:Epoch [49/100], Step [6000/6000], Loss: 0.0390
+INFO:root:=================================== EPOCH 50 =========================================
+INFO:root:Epoch [50/100], Step [1000/6000], Loss: 0.0005
+INFO:root:Epoch [50/100], Step [2000/6000], Loss: 0.0066
+INFO:root:Epoch [50/100], Step [3000/6000], Loss: 0.0003
+INFO:root:Epoch [50/100], Step [4000/6000], Loss: 0.0008
+INFO:root:Epoch [50/100], Step [5000/6000], Loss: 0.0026
+INFO:root:Epoch [50/100], Step [6000/6000], Loss: 0.0004
+INFO:root:=================================== EPOCH 51 =========================================
+INFO:root:Epoch [51/100], Step [1000/6000], Loss: 0.0004
+INFO:root:Epoch [51/100], Step [2000/6000], Loss: 0.0006
+INFO:root:Epoch [51/100], Step [3000/6000], Loss: 0.0001
+INFO:root:Epoch [51/100], Step [4000/6000], Loss: 0.0024
+INFO:root:Epoch [51/100], Step [5000/6000], Loss: 0.0091
+INFO:root:Epoch [51/100], Step [6000/6000], Loss: 0.0228
+INFO:root:=================================== EPOCH 52 =========================================
+INFO:root:Epoch [52/100], Step [1000/6000], Loss: 0.0003
+INFO:root:Epoch [52/100], Step [2000/6000], Loss: 0.0026
+INFO:root:Epoch [52/100], Step [3000/6000], Loss: 0.0008
+INFO:root:Epoch [52/100], Step [4000/6000], Loss: 0.0017
+INFO:root:Epoch [52/100], Step [5000/6000], Loss: 0.0001
+INFO:root:Epoch [52/100], Step [6000/6000], Loss: 0.0017
+INFO:root:=================================== EPOCH 53 =========================================
+INFO:root:Epoch [53/100], Step [1000/6000], Loss: 0.1722
+INFO:root:Epoch [53/100], Step [2000/6000], Loss: 0.0233
+INFO:root:Epoch [53/100], Step [3000/6000], Loss: 0.0037
+INFO:root:Epoch [53/100], Step [4000/6000], Loss: 0.0008
+INFO:root:Epoch [53/100], Step [5000/6000], Loss: 0.0007
+INFO:root:Epoch [53/100], Step [6000/6000], Loss: 0.0005
+INFO:root:=================================== EPOCH 54 =========================================
+INFO:root:Epoch [54/100], Step [1000/6000], Loss: 0.0001
+INFO:root:Epoch [54/100], Step [2000/6000], Loss: 0.0084
+INFO:root:Epoch [54/100], Step [3000/6000], Loss: 0.0177
+INFO:root:Epoch [54/100], Step [4000/6000], Loss: 0.0001
+INFO:root:Epoch [54/100], Step [5000/6000], Loss: 0.0011
+INFO:root:Epoch [54/100], Step [6000/6000], Loss: 0.0029
+INFO:root:=================================== EPOCH 55 =========================================
+INFO:root:Epoch [55/100], Step [1000/6000], Loss: 0.0010
+INFO:root:Epoch [55/100], Step [2000/6000], Loss: 0.0005
+INFO:root:Epoch [55/100], Step [3000/6000], Loss: 0.0013
+INFO:root:Epoch [55/100], Step [4000/6000], Loss: 0.0007
+INFO:root:Epoch [55/100], Step [5000/6000], Loss: 0.0012
+INFO:root:Epoch [55/100], Step [6000/6000], Loss: 0.0751
+INFO:root:=================================== EPOCH 56 =========================================
+INFO:root:Epoch [56/100], Step [1000/6000], Loss: 0.0068
+INFO:root:Epoch [56/100], Step [2000/6000], Loss: 0.0002
+INFO:root:Epoch [56/100], Step [3000/6000], Loss: 0.0000
+INFO:root:Epoch [56/100], Step [4000/6000], Loss: 0.0014
+INFO:root:Epoch [56/100], Step [5000/6000], Loss: 0.0002
+INFO:root:Epoch [56/100], Step [6000/6000], Loss: 0.0475
+INFO:root:=================================== EPOCH 57 =========================================
+INFO:root:Epoch [57/100], Step [1000/6000], Loss: 0.0001
+INFO:root:Epoch [57/100], Step [2000/6000], Loss: 0.0015
+INFO:root:Epoch [57/100], Step [3000/6000], Loss: 0.0009
+INFO:root:Epoch [57/100], Step [4000/6000], Loss: 0.0099
+INFO:root:Epoch [57/100], Step [5000/6000], Loss: 0.0556
+INFO:root:Epoch [57/100], Step [6000/6000], Loss: 0.0009
+INFO:root:=================================== EPOCH 58 =========================================
+INFO:root:Epoch [58/100], Step [1000/6000], Loss: 0.0243
+INFO:root:Epoch [58/100], Step [2000/6000], Loss: 0.0025
+INFO:root:Epoch [58/100], Step [3000/6000], Loss: 0.0024
+INFO:root:Epoch [58/100], Step [4000/6000], Loss: 0.0045
+INFO:root:Epoch [58/100], Step [5000/6000], Loss: 0.0028
+INFO:root:Epoch [58/100], Step [6000/6000], Loss: 0.0008
+INFO:root:=================================== EPOCH 59 =========================================
+INFO:root:Epoch [59/100], Step [1000/6000], Loss: 0.0067
+INFO:root:Epoch [59/100], Step [2000/6000], Loss: 0.0008
+INFO:root:Epoch [59/100], Step [3000/6000], Loss: 0.0001
+INFO:root:Epoch [59/100], Step [4000/6000], Loss: 0.0005
+INFO:root:Epoch [59/100], Step [5000/6000], Loss: 0.0006
+INFO:root:Epoch [59/100], Step [6000/6000], Loss: 0.0103
+INFO:root:=================================== EPOCH 60 =========================================
+INFO:root:Epoch [60/100], Step [1000/6000], Loss: 0.0028
+INFO:root:Epoch [60/100], Step [2000/6000], Loss: 0.0011
+INFO:root:Epoch [60/100], Step [3000/6000], Loss: 0.0277
+INFO:root:Epoch [60/100], Step [4000/6000], Loss: 0.0048
+INFO:root:Epoch [60/100], Step [5000/6000], Loss: 0.0011
+INFO:root:Epoch [60/100], Step [6000/6000], Loss: 0.0038
+INFO:root:=================================== EPOCH 61 =========================================
+INFO:root:Epoch [61/100], Step [1000/6000], Loss: 0.0010
+INFO:root:Epoch [61/100], Step [2000/6000], Loss: 0.0033
+INFO:root:Epoch [61/100], Step [3000/6000], Loss: 0.0067
+INFO:root:Epoch [61/100], Step [4000/6000], Loss: 0.0004
+INFO:root:Epoch [61/100], Step [5000/6000], Loss: 0.0004
+INFO:root:Epoch [61/100], Step [6000/6000], Loss: 0.0216
+INFO:root:=================================== EPOCH 62 =========================================
+INFO:root:Epoch [62/100], Step [1000/6000], Loss: 0.0177
+INFO:root:Epoch [62/100], Step [2000/6000], Loss: 0.0092
+INFO:root:Epoch [62/100], Step [3000/6000], Loss: 0.0017
+INFO:root:Epoch [62/100], Step [4000/6000], Loss: 0.0017
+INFO:root:Epoch [62/100], Step [5000/6000], Loss: 0.0612
+INFO:root:Epoch [62/100], Step [6000/6000], Loss: 0.0003
+INFO:root:=================================== EPOCH 63 =========================================
+INFO:root:Epoch [63/100], Step [1000/6000], Loss: 0.0008
+INFO:root:Epoch [63/100], Step [2000/6000], Loss: 0.0092
+INFO:root:Epoch [63/100], Step [3000/6000], Loss: 0.0185
+INFO:root:Epoch [63/100], Step [4000/6000], Loss: 0.0226
+INFO:root:Epoch [63/100], Step [5000/6000], Loss: 0.0152
+INFO:root:Epoch [63/100], Step [6000/6000], Loss: 0.0003
+INFO:root:=================================== EPOCH 64 =========================================
+INFO:root:Epoch [64/100], Step [1000/6000], Loss: 0.0006
+INFO:root:Epoch [64/100], Step [2000/6000], Loss: 0.0046
+INFO:root:Epoch [64/100], Step [3000/6000], Loss: 0.0018
+INFO:root:Epoch [64/100], Step [4000/6000], Loss: 0.0144
+INFO:root:Epoch [64/100], Step [5000/6000], Loss: 0.0004
+INFO:root:Epoch [64/100], Step [6000/6000], Loss: 0.0153
+INFO:root:=================================== EPOCH 65 =========================================
+INFO:root:Epoch [65/100], Step [1000/6000], Loss: 0.0312
+INFO:root:Epoch [65/100], Step [2000/6000], Loss: 0.0000
+INFO:root:Epoch [65/100], Step [3000/6000], Loss: 0.0085
+INFO:root:Epoch [65/100], Step [4000/6000], Loss: 0.0067
+INFO:root:Epoch [65/100], Step [5000/6000], Loss: 0.0001
+INFO:root:Epoch [65/100], Step [6000/6000], Loss: 0.0026
+INFO:root:=================================== EPOCH 66 =========================================
+INFO:root:Epoch [66/100], Step [1000/6000], Loss: 0.0002
+INFO:root:Epoch [66/100], Step [2000/6000], Loss: 0.0006
+INFO:root:Epoch [66/100], Step [3000/6000], Loss: 0.0167
+INFO:root:Epoch [66/100], Step [4000/6000], Loss: 0.0910
+INFO:root:Epoch [66/100], Step [5000/6000], Loss: 0.0027
+INFO:root:Epoch [66/100], Step [6000/6000], Loss: 0.0060
+INFO:root:=================================== EPOCH 67 =========================================
+INFO:root:Epoch [67/100], Step [1000/6000], Loss: 0.0028
+INFO:root:Epoch [67/100], Step [2000/6000], Loss: 0.0166
+INFO:root:Epoch [67/100], Step [3000/6000], Loss: 0.0003
+INFO:root:Epoch [67/100], Step [4000/6000], Loss: 0.0421
+INFO:root:Epoch [67/100], Step [5000/6000], Loss: 0.0023
+INFO:root:Epoch [67/100], Step [6000/6000], Loss: 0.0070
+INFO:root:=================================== EPOCH 68 =========================================
+INFO:root:Epoch [68/100], Step [1000/6000], Loss: 0.0001
+INFO:root:Epoch [68/100], Step [2000/6000], Loss: 0.1580
+INFO:root:Epoch [68/100], Step [3000/6000], Loss: 0.0006
+INFO:root:Epoch [68/100], Step [4000/6000], Loss: 0.0002
+INFO:root:Epoch [68/100], Step [5000/6000], Loss: 0.0001
+INFO:root:Epoch [68/100], Step [6000/6000], Loss: 0.0015
+INFO:root:=================================== EPOCH 69 =========================================
+INFO:root:Epoch [69/100], Step [1000/6000], Loss: 0.0337
+INFO:root:Epoch [69/100], Step [2000/6000], Loss: 0.0321
+INFO:root:Epoch [69/100], Step [3000/6000], Loss: 0.0003
+INFO:root:Epoch [69/100], Step [4000/6000], Loss: 0.0021
+INFO:root:Epoch [69/100], Step [5000/6000], Loss: 0.0433
+INFO:root:Epoch [69/100], Step [6000/6000], Loss: 0.0350
+INFO:root:=================================== EPOCH 70 =========================================
+INFO:root:Epoch [70/100], Step [1000/6000], Loss: 0.0001
+INFO:root:Epoch [70/100], Step [2000/6000], Loss: 0.0160
+INFO:root:Epoch [70/100], Step [3000/6000], Loss: 0.0000
+INFO:root:Epoch [70/100], Step [4000/6000], Loss: 0.0014
+INFO:root:Epoch [70/100], Step [5000/6000], Loss: 0.0003
+INFO:root:Epoch [70/100], Step [6000/6000], Loss: 0.0001
+INFO:root:=================================== EPOCH 71 =========================================
+INFO:root:Epoch [71/100], Step [1000/6000], Loss: 0.0335
+INFO:root:Epoch [71/100], Step [2000/6000], Loss: 0.0127
+INFO:root:Epoch [71/100], Step [3000/6000], Loss: 0.0002
+INFO:root:Epoch [71/100], Step [4000/6000], Loss: 0.0032
+INFO:root:Epoch [71/100], Step [5000/6000], Loss: 0.0004
+INFO:root:Epoch [71/100], Step [6000/6000], Loss: 0.0033
+INFO:root:=================================== EPOCH 72 =========================================
+INFO:root:Epoch [72/100], Step [1000/6000], Loss: 0.0138
+INFO:root:Epoch [72/100], Step [2000/6000], Loss: 0.0002
+INFO:root:Epoch [72/100], Step [3000/6000], Loss: 0.0011
+INFO:root:Epoch [72/100], Step [4000/6000], Loss: 0.0013
+INFO:root:Epoch [72/100], Step [5000/6000], Loss: 0.0119
+INFO:root:Epoch [72/100], Step [6000/6000], Loss: 0.0002
+INFO:root:=================================== EPOCH 73 =========================================
+INFO:root:Epoch [73/100], Step [1000/6000], Loss: 0.0067
+INFO:root:Epoch [73/100], Step [2000/6000], Loss: 0.0006
+INFO:root:Epoch [73/100], Step [3000/6000], Loss: 0.0002
+INFO:root:Epoch [73/100], Step [4000/6000], Loss: 0.0001
+INFO:root:Epoch [73/100], Step [5000/6000], Loss: 0.0002
+INFO:root:Epoch [73/100], Step [6000/6000], Loss: 0.0000
+INFO:root:=================================== EPOCH 74 =========================================
+INFO:root:Epoch [74/100], Step [1000/6000], Loss: 0.0001
+INFO:root:Epoch [74/100], Step [2000/6000], Loss: 0.0102
+INFO:root:Epoch [74/100], Step [3000/6000], Loss: 0.0002
+INFO:root:Epoch [74/100], Step [4000/6000], Loss: 0.0046
+INFO:root:Epoch [74/100], Step [5000/6000], Loss: 0.0001
+INFO:root:Epoch [74/100], Step [6000/6000], Loss: 0.0152
+INFO:root:=================================== EPOCH 75 =========================================
+INFO:root:Epoch [75/100], Step [1000/6000], Loss: 0.0035
+INFO:root:Epoch [75/100], Step [2000/6000], Loss: 0.0041
+INFO:root:Epoch [75/100], Step [3000/6000], Loss: 0.0005
+INFO:root:Epoch [75/100], Step [4000/6000], Loss: 0.0160
+INFO:root:Epoch [75/100], Step [5000/6000], Loss: 0.0002
+INFO:root:Epoch [75/100], Step [6000/6000], Loss: 0.0045
+INFO:root:=================================== EPOCH 76 =========================================
+INFO:root:Epoch [76/100], Step [1000/6000], Loss: 0.0351
+INFO:root:Epoch [76/100], Step [2000/6000], Loss: 0.0306
+INFO:root:Epoch [76/100], Step [3000/6000], Loss: 0.0002
+INFO:root:Epoch [76/100], Step [4000/6000], Loss: 0.0001
+INFO:root:Epoch [76/100], Step [5000/6000], Loss: 0.0003
+INFO:root:Epoch [76/100], Step [6000/6000], Loss: 0.0003
+INFO:root:=================================== EPOCH 77 =========================================
+INFO:root:Epoch [77/100], Step [1000/6000], Loss: 0.0004
+INFO:root:Epoch [77/100], Step [2000/6000], Loss: 0.0002
+INFO:root:Epoch [77/100], Step [3000/6000], Loss: 0.0063
+INFO:root:Epoch [77/100], Step [4000/6000], Loss: 0.0000
+INFO:root:Epoch [77/100], Step [5000/6000], Loss: 0.0021
+INFO:root:Epoch [77/100], Step [6000/6000], Loss: 0.0020
+INFO:root:=================================== EPOCH 78 =========================================
+INFO:root:Epoch [78/100], Step [1000/6000], Loss: 0.0000
+INFO:root:Epoch [78/100], Step [2000/6000], Loss: 0.0010
+INFO:root:Epoch [78/100], Step [3000/6000], Loss: 0.0006
+INFO:root:Epoch [78/100], Step [4000/6000], Loss: 0.0103
+INFO:root:Epoch [78/100], Step [5000/6000], Loss: 0.0006
+INFO:root:Epoch [78/100], Step [6000/6000], Loss: 0.0044
+INFO:root:=================================== EPOCH 79 =========================================
+INFO:root:Epoch [79/100], Step [1000/6000], Loss: 0.0042
+INFO:root:Epoch [79/100], Step [2000/6000], Loss: 0.0003
+INFO:root:Epoch [79/100], Step [3000/6000], Loss: 0.0002
+INFO:root:Epoch [79/100], Step [4000/6000], Loss: 0.0116
+INFO:root:Epoch [79/100], Step [5000/6000], Loss: 0.0016
+INFO:root:Epoch [79/100], Step [6000/6000], Loss: 0.0151
+INFO:root:=================================== EPOCH 80 =========================================
+INFO:root:Epoch [80/100], Step [1000/6000], Loss: 0.0000
+INFO:root:Epoch [80/100], Step [2000/6000], Loss: 0.0945
+INFO:root:Epoch [80/100], Step [3000/6000], Loss: 0.0001
+INFO:root:Epoch [80/100], Step [4000/6000], Loss: 0.0110
+INFO:root:Epoch [80/100], Step [5000/6000], Loss: 0.0002
+INFO:root:Epoch [80/100], Step [6000/6000], Loss: 0.0264
+INFO:root:=================================== EPOCH 81 =========================================
+INFO:root:Epoch [81/100], Step [1000/6000], Loss: 0.0000
+INFO:root:Epoch [81/100], Step [2000/6000], Loss: 0.0000
+INFO:root:Epoch [81/100], Step [3000/6000], Loss: 0.0001
+INFO:root:Epoch [81/100], Step [4000/6000], Loss: 0.0066
+INFO:root:Epoch [81/100], Step [5000/6000], Loss: 0.0005
+INFO:root:Epoch [81/100], Step [6000/6000], Loss: 0.0043
+INFO:root:=================================== EPOCH 82 =========================================
+INFO:root:Epoch [82/100], Step [1000/6000], Loss: 0.0001
+INFO:root:Epoch [82/100], Step [2000/6000], Loss: 0.0003
+INFO:root:Epoch [82/100], Step [3000/6000], Loss: 0.0003
+INFO:root:Epoch [82/100], Step [4000/6000], Loss: 0.0000
+INFO:root:Epoch [82/100], Step [5000/6000], Loss: 0.0001
+INFO:root:Epoch [82/100], Step [6000/6000], Loss: 0.0003
+INFO:root:=================================== EPOCH 83 =========================================
+INFO:root:Epoch [83/100], Step [1000/6000], Loss: 0.0002
+INFO:root:Epoch [83/100], Step [2000/6000], Loss: 0.0000
+INFO:root:Epoch [83/100], Step [3000/6000], Loss: 0.0929
+INFO:root:Epoch [83/100], Step [4000/6000], Loss: 0.0004
+INFO:root:Epoch [83/100], Step [5000/6000], Loss: 0.0002
+INFO:root:Epoch [83/100], Step [6000/6000], Loss: 0.0004
+INFO:root:=================================== EPOCH 84 =========================================
+INFO:root:Epoch [84/100], Step [1000/6000], Loss: 0.0065
+INFO:root:Epoch [84/100], Step [2000/6000], Loss: 0.0170
+INFO:root:Epoch [84/100], Step [3000/6000], Loss: 0.0003
+INFO:root:Epoch [84/100], Step [4000/6000], Loss: 0.0004
+INFO:root:Epoch [84/100], Step [5000/6000], Loss: 0.0002
+INFO:root:Epoch [84/100], Step [6000/6000], Loss: 0.0040
+INFO:root:=================================== EPOCH 85 =========================================
+INFO:root:Epoch [85/100], Step [1000/6000], Loss: 0.0001
+INFO:root:Epoch [85/100], Step [2000/6000], Loss: 0.0014
+INFO:root:Epoch [85/100], Step [3000/6000], Loss: 0.0029
+INFO:root:Epoch [85/100], Step [4000/6000], Loss: 0.0013
+INFO:root:Epoch [85/100], Step [5000/6000], Loss: 0.0000
+INFO:root:Epoch [85/100], Step [6000/6000], Loss: 0.0000
+INFO:root:=================================== EPOCH 86 =========================================
+INFO:root:Epoch [86/100], Step [1000/6000], Loss: 0.0001
+INFO:root:Epoch [86/100], Step [2000/6000], Loss: 0.0004
+INFO:root:Epoch [86/100], Step [3000/6000], Loss: 0.0000
+INFO:root:Epoch [86/100], Step [4000/6000], Loss: 0.0862
+INFO:root:Epoch [86/100], Step [5000/6000], Loss: 0.0072
+INFO:root:Epoch [86/100], Step [6000/6000], Loss: 0.0001
+INFO:root:=================================== EPOCH 87 =========================================
+INFO:root:Epoch [87/100], Step [1000/6000], Loss: 0.0000
+INFO:root:Epoch [87/100], Step [2000/6000], Loss: 0.0148
+INFO:root:Epoch [87/100], Step [3000/6000], Loss: 0.0000
+INFO:root:Epoch [87/100], Step [4000/6000], Loss: 0.0039
+INFO:root:Epoch [87/100], Step [5000/6000], Loss: 0.0001
+INFO:root:Epoch [87/100], Step [6000/6000], Loss: 0.0077
+INFO:root:=================================== EPOCH 88 =========================================
+INFO:root:Epoch [88/100], Step [1000/6000], Loss: 0.0005
+INFO:root:Epoch [88/100], Step [2000/6000], Loss: 0.0000
+INFO:root:Epoch [88/100], Step [3000/6000], Loss: 0.0000
+INFO:root:Epoch [88/100], Step [4000/6000], Loss: 0.0000
+INFO:root:Epoch [88/100], Step [5000/6000], Loss: 0.0086
+INFO:root:Epoch [88/100], Step [6000/6000], Loss: 0.0005
+INFO:root:=================================== EPOCH 89 =========================================
+INFO:root:Epoch [89/100], Step [1000/6000], Loss: 0.0000
+INFO:root:Epoch [89/100], Step [2000/6000], Loss: 0.0001
+INFO:root:Epoch [89/100], Step [3000/6000], Loss: 0.0001
+INFO:root:Epoch [89/100], Step [4000/6000], Loss: 0.0002
+INFO:root:Epoch [89/100], Step [5000/6000], Loss: 0.0225
+INFO:root:Epoch [89/100], Step [6000/6000], Loss: 0.0002
+INFO:root:=================================== EPOCH 90 =========================================
+INFO:root:Epoch [90/100], Step [1000/6000], Loss: 0.0001
+INFO:root:Epoch [90/100], Step [2000/6000], Loss: 0.0001
+INFO:root:Epoch [90/100], Step [3000/6000], Loss: 0.0000
+INFO:root:Epoch [90/100], Step [4000/6000], Loss: 0.0009
+INFO:root:Epoch [90/100], Step [5000/6000], Loss: 0.0024
+INFO:root:Epoch [90/100], Step [6000/6000], Loss: 0.0003
+INFO:root:=================================== EPOCH 91 =========================================
+INFO:root:Epoch [91/100], Step [1000/6000], Loss: 0.0001
+INFO:root:Epoch [91/100], Step [2000/6000], Loss: 0.0000
+INFO:root:Epoch [91/100], Step [3000/6000], Loss: 0.0000
+INFO:root:Epoch [91/100], Step [4000/6000], Loss: 0.0001
+INFO:root:Epoch [91/100], Step [5000/6000], Loss: 0.0011
+INFO:root:Epoch [91/100], Step [6000/6000], Loss: 0.0067
+INFO:root:=================================== EPOCH 92 =========================================
+INFO:root:Epoch [92/100], Step [1000/6000], Loss: 0.0004
+INFO:root:Epoch [92/100], Step [2000/6000], Loss: 0.1466
+INFO:root:Epoch [92/100], Step [3000/6000], Loss: 0.0002
+INFO:root:Epoch [92/100], Step [4000/6000], Loss: 0.0028
+INFO:root:Epoch [92/100], Step [5000/6000], Loss: 0.0000
+INFO:root:Epoch [92/100], Step [6000/6000], Loss: 0.0023
+INFO:root:=================================== EPOCH 93 =========================================
+INFO:root:Epoch [93/100], Step [1000/6000], Loss: 0.0003
+INFO:root:Epoch [93/100], Step [2000/6000], Loss: 0.0006
+INFO:root:Epoch [93/100], Step [3000/6000], Loss: 0.0281
+INFO:root:Epoch [93/100], Step [4000/6000], Loss: 0.0015
+INFO:root:Epoch [93/100], Step [5000/6000], Loss: 0.0000
+INFO:root:Epoch [93/100], Step [6000/6000], Loss: 0.0012
+INFO:root:=================================== EPOCH 94 =========================================
+INFO:root:Epoch [94/100], Step [1000/6000], Loss: 0.0012
+INFO:root:Epoch [94/100], Step [2000/6000], Loss: 0.0000
+INFO:root:Epoch [94/100], Step [3000/6000], Loss: 0.0002
+INFO:root:Epoch [94/100], Step [4000/6000], Loss: 0.0001
+INFO:root:Epoch [94/100], Step [5000/6000], Loss: 0.0064
+INFO:root:Epoch [94/100], Step [6000/6000], Loss: 0.0003
+INFO:root:=================================== EPOCH 95 =========================================
+INFO:root:Epoch [95/100], Step [1000/6000], Loss: 0.0012
+INFO:root:Epoch [95/100], Step [2000/6000], Loss: 0.0004
+INFO:root:Epoch [95/100], Step [3000/6000], Loss: 0.8840
+INFO:root:Epoch [95/100], Step [4000/6000], Loss: 0.0004
+INFO:root:Epoch [95/100], Step [5000/6000], Loss: 0.0000
+INFO:root:Epoch [95/100], Step [6000/6000], Loss: 0.0036
+INFO:root:=================================== EPOCH 96 =========================================
+INFO:root:Epoch [96/100], Step [1000/6000], Loss: 0.0009
+INFO:root:Epoch [96/100], Step [2000/6000], Loss: 0.0238
+INFO:root:Epoch [96/100], Step [3000/6000], Loss: 0.0004
+INFO:root:Epoch [96/100], Step [4000/6000], Loss: 0.0268
+INFO:root:Epoch [96/100], Step [5000/6000], Loss: 0.0000
+INFO:root:Epoch [96/100], Step [6000/6000], Loss: 0.0053
+INFO:root:=================================== EPOCH 97 =========================================
+INFO:root:Epoch [97/100], Step [1000/6000], Loss: 0.0021
+INFO:root:Epoch [97/100], Step [2000/6000], Loss: 0.0292
+INFO:root:Epoch [97/100], Step [3000/6000], Loss: 0.0022
+INFO:root:Epoch [97/100], Step [4000/6000], Loss: 0.0982
+INFO:root:Epoch [97/100], Step [5000/6000], Loss: 0.0001
+INFO:root:Epoch [97/100], Step [6000/6000], Loss: 0.0385
+INFO:root:=================================== EPOCH 98 =========================================
+INFO:root:Epoch [98/100], Step [1000/6000], Loss: 0.0001
+INFO:root:Epoch [98/100], Step [2000/6000], Loss: 0.0042
+INFO:root:Epoch [98/100], Step [3000/6000], Loss: 0.0026
+INFO:root:Epoch [98/100], Step [4000/6000], Loss: 0.0001
+INFO:root:Epoch [98/100], Step [5000/6000], Loss: 0.0000
+INFO:root:Epoch [98/100], Step [6000/6000], Loss: 0.0000
+INFO:root:=================================== EPOCH 99 =========================================
+INFO:root:Epoch [99/100], Step [1000/6000], Loss: 0.0000
+INFO:root:Epoch [99/100], Step [2000/6000], Loss: 0.0002
+INFO:root:Epoch [99/100], Step [3000/6000], Loss: 0.0028
+INFO:root:Epoch [99/100], Step [4000/6000], Loss: 0.0000
+INFO:root:Epoch [99/100], Step [5000/6000], Loss: 0.0001
+INFO:root:Epoch [99/100], Step [6000/6000], Loss: 0.0001
+INFO:root:=================================== EPOCH 100 =========================================
+INFO:root:Epoch [100/100], Step [1000/6000], Loss: 0.0008
+INFO:root:Epoch [100/100], Step [2000/6000], Loss: 0.0074
+INFO:root:Epoch [100/100], Step [3000/6000], Loss: 0.0003
+INFO:root:Epoch [100/100], Step [4000/6000], Loss: 0.0001
+INFO:root:Epoch [100/100], Step [5000/6000], Loss: 0.0000
+INFO:root:Epoch [100/100], Step [6000/6000], Loss: 0.0021
+INFO:root:===================================Training Finished ===============================================
+INFO:root:                     Training total time = 5955.198617219925  seconds 
+INFO:root:                     Training Energy = 0.07704536862191136  kWh 
+INFO:root:                     Training Carbon Emissions = 0.004237495274205125  CO2eq
+INFO:root:                             Accuracy of the network : 99.1%                                  
