@@ -1,4 +1,5 @@
 import math
+import pandas as pd
 from ..States.States import *
 
 
@@ -9,7 +10,7 @@ class Network:
     """
     def __init__(self, **kwarg):
         """
-        Attributes of Network. Kwargs params are developped there.
+        Attributes of Network. Kwargs params are precised here
         :param kwarg: - Connexion of the devices, if the access network is 2G/3G/4G/5G, upload and download speeds.
                       - Path where we want to save the CSV output
         """
@@ -18,6 +19,8 @@ class Network:
             'network_path',
             '/home/osboxes/PycharmProjects/clustered-fl/SimEnv/Simulation/Network/network_output.csv'
         )
+
+        self.worker_numbers = None
 
         self.mobile_1GO = kwarg.get('mobile_1GO', 495)  # Wh
         self.download_speed_2G = kwarg.get('download_speed_2G', 7.2)  # Mbps
@@ -43,76 +46,72 @@ class Network:
         self.network_infos_df = None
         self.network_df_reduced = None
 
+        self.network_energy_consumption = None
+
     def create_simulated_network(self, state):
         """
-        Méthode qui va créer le double numérique de l'architecture réseau physique existante sur la plateforme FL
-        physique.
+        This method will create the numeric clone of the network architecture
 
-        :param state: instance de la classe States
+        :param state: Instance of States class
 
-        :return:  Dataframe avec un CSV avec toutes les informations des liaisons réseau entre tous les devices et le
-                  serveur central en fonction de la distance entre ce
+        :return:  Dataframe and a CSV with all network and distance information between a device and the central server
+                  at each timestamp.
         """
+
         if os.path.exists(self.network_path):
             self.network_infos_df = pd.read_csv(self.network_path)
             return
 
         distance_list = []
 
-        for i in range(state.perma_states_df.shape[0]):
-            distance = math.sqrt((state.perma_states_df['Position_X'][i] - state.server_position_x) ** 2 + (
-                    state.perma_states_df['Position_Y'][i] - state.server_position_y) ** 2)
-            distance_list.append(distance)
+        if state.states_activated:
+            for i in range(state.perma_states_df.shape[0]):
+                distance = math.sqrt((state.perma_states_df['Position_X'][i] - state.server_position_x) ** 2 + (
+                        state.perma_states_df['Position_Y'][i] - state.server_position_y) ** 2)
+                distance_list.append(distance)
 
-        network_infos_df = pd.DataFrame()
-        network_infos_df['Guid'] = state.perma_states_df['Guid']
-        network_infos_df['Timestamp'] = state.timestamp_df
-        network_infos_df['Distance'] = distance_list
-        network_infos_df['Network'] = state.perma_states_df['Network']
+            network_infos_df = pd.DataFrame()
+            network_infos_df['Guid'] = state.perma_states_df['Guid']
+            network_infos_df['Timestamp'] = state.timestamp_df
+            network_infos_df['Distance'] = distance_list
+            network_infos_df['Network'] = state.perma_states_df['Network']
 
-        self.network_infos_df = network_infos_df
+            self.network_infos_df = network_infos_df
 
-        network_infos_df.to_csv(self.network_path, index=False)
+            network_infos_df.to_csv(self.network_path, index=False)
+
+        # TODO If States is disabled
 
         return
 
     def network_request(self, guid, timestamp):
         """
-        Fonction qui va permettre de récupérer les informations sur le réseau qui se trouvent dans le csv retourné par
-        la méthode create_simulated_network() sur le guid demandé et au moment du timestamp demandé
+        Method which will allows to get the information on the network by requesting the network_output.csv file, with a
+        particular guis and at a specific timestamp.
 
-        :param guid: le guid de l'appareil qui nous intéresse
-        :param timestamp: le timestamp qui nous intéresse
-
-        :return: - les informations sur le réseau, la disponibilité... du device demandé, au timestamp voulu
+        :param guid: guid of the device we want
+        :param timestamp: timestamp needed
         """
         with open(self.network_path, 'r', encoding='utf-8') as f:
             df = pd.read_csv(f)
             self.network_df_reduced = df.loc[(df['Timestamp'] == str(timestamp)) & (df['Guid'] == guid)].iloc[0]
-        return
 
-    def network_energy_consumption(self, data_quantity, **kwargs):
+    def network_energy_consumption_and_time_calculation(self, data_quantity, fix_network='fiber', mobile_network='4G'):
         """
-        Fonction qui va calculer les valeurs de consommation énergétique des communications entre le device sélectionné
-        et le serveur centrale
-        :param data_quantity: quantité de donnée (en bits ou en octets à transférer)
-        :param kwargs: les différents mode de connexion pour le mobile et le fix
+        Function which will calculate values of energy consumption of the communication between central server and
+        devices, and give the time of this communication
 
-        :return: la quantité d'énergie consommée par la communication demandée
+        :param data_quantity: number of parameters of the model
+        :param fix_network: the access network of the device if it's a fix network
+        :param mobile_network: the access network of the device if it's a fix network
+
+        :return: list with energy consumption in Wh and upload and download times in seconds
         """
-        # TODO penser à ajouter la dépendance avec la distance par la suite
-        # FIXME pour l'instant, quand le network a pour valeur "fix" on considère qu'on est en fibre, et quand on est
-        # en mobile, on considère qu'on est en 4G.
-
-        data_quantity_unit = kwargs.get('data_quantity_unit', 'bit')
-        if data_quantity_unit == "octet":
-            data_quantity = data_quantity / 8
-
-        fix_network = kwargs.get('fix_network', 'fiber')
-        mobile_network = kwargs.get('mobile_network', '4G')
 
         if self.network_df_reduced['Network'] == "mobile":
             energy_consumption = data_quantity*(self.mobile_1GO+self.mobile_core_network_1GO)
+            # TODO taking distance into account, and change the 4G and fiber default, but works for now
+
             if mobile_network == "2G":
                 download_communication_time = data_quantity/self.download_speed_2G
                 upload_communication_time = data_quantity/self.upload_speed_2G
@@ -135,4 +134,4 @@ class Network:
                 upload_communication_time = data_quantity/self.upload_speed_ADSL
                 download_communication_time = data_quantity/self.download_speed_ADSL
 
-        return energy_consumption, upload_communication_time, download_communication_time
+        return [energy_consumption, upload_communication_time, download_communication_time]

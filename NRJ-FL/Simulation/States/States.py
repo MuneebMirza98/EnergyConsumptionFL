@@ -8,17 +8,17 @@ from .Timer import Timer
 
 class States:
     """
-    Créé le double numérique des devices, dans les états (charge, vérouillage, modèle du device, puissance du device...)
-    et donne les informations sur les devices demandées à Env.
+    Creates the digital double of devices states.
     """
-
     def __init__(self, **kwarg):
+
+        self.states_mode = 'enable'
 
         self.server_position_x = kwarg.get('server_position_x', -5)  # Mbps
         self.server_position_y = kwarg.get('server_position_y', 10)  # Mbps
         self.output_path = kwarg.get(
             'output_path',
-            '/home/osboxes/PycharmProjects/clustered-fl/SimEnv/Simulation/States/states_output.csv'
+            './states_output.csv'
         )
 
         self.guid_list = None
@@ -31,10 +31,9 @@ class States:
 
     def create_states_CSV(self):
         """
-        Méthode qui créé un CSV contenant tous les états de 1000 devices sur 4 jours, en utilisant des données raw
-        issues d'un fichier JSON
+        Method which creates a CSV file with all the states of 1000 devices on 4 days
 
-        :return: un CSV avec toutes les informations sur les états des devices ainsi que le dataframe correspondant
+        :return: explained before + the dataframe corresponding in the attributes
         """
 
         if os.path.exists(self.output_path):
@@ -57,7 +56,7 @@ class States:
         position_list_x = []
         position_list_y = []
 
-        PATH = '/home/osboxes/PycharmProjects/SimEnv/Simulation/States/state_traces.json'
+        PATH = './state_traces.json'
         with open(PATH, 'r', encoding='utf-8') as f:
             d = json.load(f)
 
@@ -128,25 +127,18 @@ class States:
 
     def state_request(self, guid, timestamp):
         """
-        Fonction qui va permettre de récupérer l'état du device qui se trouvent dans le csv retourné par la méthode
-        create_state_CSV() à partir de son guid et du timestamp voulu.
+        Method which will get the state of any device at any timestamp when we give the guid.
 
-        :param guid: le guid de l'appareil qui nous intéresse
-        :param timestamp: le timestamp qui nous intéresse
+        :param guid: guid of the device
+        :param timestamp: timestamp needed
 
-        :return: - les informations sur le réseau, la disponibilité... du device demandé, au timestamp voulu
+        :return: state of the device we want
         """
         with open(self.output_path, 'r', encoding='utf-8') as f:
             df = pd.read_csv(f)
             self.df_reduced = df.loc[(df['Timestamp'] == str(timestamp)) & (df['Guid'] == guid)].iloc[0]
-        return
 
     def simulated_state(self, **kwargs):
         """
-        Fonction qui va permettre d'ajouter les états simulés des devices qui auront été sélectionnés pour les
-        différents rounds d'expériences d'apprentissage fédéré.
-
-        :param kwargs:
-
-        :return:
+        Method to update the availability of the workers
         """

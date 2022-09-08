@@ -38,7 +38,7 @@ import numpy as np
 # df_final.to_csv('./Centralized/resume_result_centralized.csv', index=False, header=True)
 
 
-########################## Federated case : Generation of resume_result_federated.csv ################################
+########################## Federated case : Generation of computation_principal_base.csv ################################
 ################################### Method based on output of the FL platform ########################################
 
 
@@ -196,7 +196,7 @@ import numpy as np
 ############################## Compare energy consumption between fl and centralized ###################################
 
 
-df_c = pd.read_csv('Centralized/resume_result_centralized.csv')
+df_c = pd.read_csv('./Centralized/results_centralized/resume_result_centralized.csv')
 df_mnist_cuda = df_c.loc[(df_c['Dataset'] == 'FashionMNIST') & (df_c['Device'] == "cuda")]
 uploading_dataset_consumption = (0.011 * 9.5)/1000  # MNIST size in Go x 1Go communication cost in fiber
 df_mnist_cuda['Training Energy'] = df_mnist_cuda['Training Energy']*30 + uploading_dataset_consumption
@@ -208,7 +208,7 @@ df_mnist_cpu['Training Energy'] = df_mnist_cpu['Training Energy']*30 + uploading
 print(df_mnist_cpu[['Training Energy', 'Batch Size']])
 
 
-model = FashionCNN()
+model = MNIST_CNN()
 mods = list(model.modules())
 for i in range(1, len(mods)):
     m = mods[i]
@@ -222,7 +222,7 @@ for i in range(len(sizes)):
     s = sizes[i]
     bits = np.prod(np.array(s))*32
     total_bits += bits
-# print(f'HEEEEEEEEEERRRRRRRRRREEEEEEEEEEEEEEEE : {total_bits}')
+print(f'HEEEEEEEEEERRRRRRRRRREEEEEEEEEEEEEEEE : {total_bits}')
 
 communication_energy = (19*0.000063*495)/1000
 df_final_fl = pd.read_csv('./Federated/resume_result_federated.csv')

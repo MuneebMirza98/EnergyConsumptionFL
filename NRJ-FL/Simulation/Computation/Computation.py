@@ -3,15 +3,14 @@ import pandas as pd
 
 class Computation:
     """
-    Lance la simulation de l'entraînement des modèles sur les devices ainsi que de l'agrégation des paramètres des
-    modèles sur le master et renvoies les données de consommation énergétique à Env.
+    Determine the energy consumption of the total training of a federated learning algorithm
     """
 
     def __init__(self):  # FIXME arguments potentiels manquants à ajouter
 
         self.df_results = None
 
-    def energy_consumption(self):
+    def training_energy_consumption(self):
         """
         Méthode qui va calculer la consommation énergétique des entraînements et ainsi alimenter les CSV, pour les cas
         centralisés et fédérés # FIXME pour l'instant il n'y a que le cas centralisé

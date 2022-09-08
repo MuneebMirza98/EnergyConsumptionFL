@@ -1,0 +1,29 @@
+############################### BASE CONFIG #######################################
+
+Dataset_name : 'MNIST'
+Dataset_size : 1  # Size of the Dataset in Go
+Batch_size : 10
+Model_size : 216545321  # Number of parameters in the model
+nbr_workers : 10
+nbr_rounds : 10
+# Hardware = CPU or GPU
+Hardware : 'GPU'
+
+# In which category your CPU belongs to ? Powerful ? Weak ? None ?
+# Powerful if nbr of cores > 4 and frequency > 3.50 GHz
+# None if GPU used
+CPU_type : 'Powerful'
+
+
+############################### STATES OPTIONS ####################################
+
+# Can be default, enabled and disabled
+# If it's default, we will use the states df already in States
+# If it's enabled, States needs a csv input from the user
+# If it's disable, States will not be called
+States_mode : 'default'
+States_csv_if_enable : '<PATH>'
+
+############################### NETWORK OPTIONS ####################################
+
+Distance_network : False
