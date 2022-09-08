@@ -4,20 +4,16 @@ from ..States.States import *
 
 class Network:
     """
-    Classe mère de tous les Networks possible (accès cellulaire, accès fixe et coeur). Cette classe créé le double
-    numérique du réseau, et fixe les valeurs de consommation énergétique par Go qui seront utilisées par la suite par
-    Env pour qu'il puisse réaliser tous ses calculs.
+    Mother class of every possible networks (cellular, access and core). This class creates the numeric network,
+    with energy consumption values per Go which will be used by Env calculate the energy total consumption.
     """
-
     def __init__(self, **kwarg):
         """
-        Attributs de Network. Il y a les kwargs qui peuvent être des paramètres d'entrée et les attributs à valeur None
-        au début qui prendront leurs valeurs après avoir été affecté par les méthodes de la classe.
-
-        :param kwarg: - Les modes de connexion des devices, si c'est par 2G/3G/4G/5G, les différentes vitesses d'upload
-                        et de download.
-                      - Le chemin de stockage du fichier CSV contenant les résultats.
+        Attributes of Network. Kwargs params are developped there.
+        :param kwarg: - Connexion of the devices, if the access network is 2G/3G/4G/5G, upload and download speeds.
+                      - Path where we want to save the CSV output
         """
+
         self.network_path = kwarg.get(
             'network_path',
             '/home/osboxes/PycharmProjects/clustered-fl/SimEnv/Simulation/Network/network_output.csv'
