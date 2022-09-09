@@ -22,16 +22,16 @@ class Env:
         self.computation = Computation()
 
         self.training_energy_consumed = None
-        self.training_time = None
+        # self.training_time = None
 
         self.network_energy_consumed = None
-        self.network_time = None
+        # self.network_time = None
 
-    def start_simulation(self):
-        self. simulation_started = True
-
-    def stop_simulation(self):
-        self.simulation_started = False
+    # def start_simulation(self):
+    #     self. simulation_started = True
+    #
+    # def stop_simulation(self):
+    #     self.simulation_started = False
 
     def get_states(self, guid, timestamp):
         """
@@ -47,3 +47,4 @@ class Env:
         """
         Function which will run all the simulation
         """
+
