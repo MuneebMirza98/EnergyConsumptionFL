@@ -29,4 +29,4 @@ class Computation:
             # it') return
             else:
                 print('not this information in my database, please make experiment and feed it')
-                return
+                return 'not this information in my database, please make experiment and feed it'

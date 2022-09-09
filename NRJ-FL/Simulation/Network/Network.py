@@ -109,7 +109,7 @@ class Network:
         """
 
         if self.network_df_reduced['Network'] == "mobile":
-            energy_consumption = data_quantity*(self.mobile_1GO+self.mobile_core_network_1GO)
+            energy_consumption = ((data_quantity/8)/1000000000)*(self.mobile_1GO+self.mobile_core_network_1GO)
             # TODO taking distance into account, and change the 4G and fiber default, but works for now
 
             if mobile_network == "2G":
@@ -126,7 +126,7 @@ class Network:
                 upload_communication_time = data_quantity/self.upload_speed_4G
         else:
             if fix_network == "fiber":
-                energy_consumption = data_quantity*self.fix_ADSL_1GO + self.fix_core_network_1GO
+                energy_consumption = ((data_quantity/8)/1000000000)*self.fix_ADSL_1GO + self.fix_core_network_1GO
                 upload_communication_time = data_quantity/self.upload_speed_fiber
                 download_communication_time = data_quantity/self.download_speed_fiber
             else:

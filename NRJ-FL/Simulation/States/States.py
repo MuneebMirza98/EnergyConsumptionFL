@@ -142,3 +142,4 @@ class States:
         """
         Method to update the availability of the workers
         """
+        # TODO later pas urgent
